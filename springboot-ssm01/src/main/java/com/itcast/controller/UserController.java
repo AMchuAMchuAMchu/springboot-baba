@@ -32,7 +32,7 @@ public class UserController {
 
         users.forEach(System.out::println);
 
-        return "ok";
+        return "index";
     }
 
 }
