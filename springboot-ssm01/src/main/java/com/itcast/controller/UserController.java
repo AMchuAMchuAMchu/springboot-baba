@@ -34,9 +34,7 @@ public class UserController {
 
         users.forEach(System.out::println);
 
-
-
-        return "index";
+        return "index.html";
     }
 
 }
