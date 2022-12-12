@@ -19,21 +19,21 @@ import java.util.List;
  * CreateTime ==> 2022-12-12 20:02:31
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@RequestMapping("/user")
-@RestController
+@RequestMapping("/")
+@Controller
 public class UserController {
 
     @Autowired
     private UserDao userDao;
 
-    @GetMapping
-    public String get(HttpServletResponse resp){
+    @GetMapping("/user")
+    public String user(){
 
         List<User> users = userDao.selectList(null);
 
         users.forEach(System.out::println);
 
-        return "<h1>ok</h1>";
+        return "index";
     }
 
 }
