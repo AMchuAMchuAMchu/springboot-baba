@@ -1,14 +1,12 @@
 package com.itcast.controller;
 
-import com.itcast.dao.UserDao;
-import com.itcast.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletResponse;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -23,17 +21,11 @@ import java.util.List;
 @Controller
 public class UserController {
 
-    @Autowired
-    private UserDao userDao;
-
-    @GetMapping("/user")
-    public String user(){
-
-        List<User> users = userDao.selectList(null);
-
-        users.forEach(System.out::println);
-
-        return "/templates/index.html";
+    @GetMapping("/demo")
+    public String user(Model model){
+        System.out.println("访问:"+ LocalDateTime.now());
+        model.addAttribute("name","shion");
+        return "demo";
     }
 
 }
