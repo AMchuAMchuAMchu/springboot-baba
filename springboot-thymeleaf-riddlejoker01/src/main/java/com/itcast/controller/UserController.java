@@ -24,7 +24,7 @@ public class UserController {
     @GetMapping("/demo")
     public String user(Model model){
         System.out.println("访问:"+ LocalDateTime.now());
-        model.addAttribute("name","shion");
+        model.addAttribute("name","shino");
         return "demo";
     }
 
