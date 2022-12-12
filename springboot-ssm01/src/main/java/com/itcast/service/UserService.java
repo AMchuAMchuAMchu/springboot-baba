@@ -1,7 +1,7 @@
 package com.itcast.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.apache.catalina.User;
+import com.itcast.entity.User;
 import org.springframework.transaction.annotation.Transactional;
 
 /**

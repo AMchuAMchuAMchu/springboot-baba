@@ -2,8 +2,8 @@ package com.itcast.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.itcast.dao.UserDao;
+import com.itcast.entity.User;
 import com.itcast.service.UserService;
-import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 /**

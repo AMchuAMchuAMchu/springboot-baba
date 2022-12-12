@@ -1,7 +1,7 @@
 package com.itcast.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.catalina.User;
+import com.itcast.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
