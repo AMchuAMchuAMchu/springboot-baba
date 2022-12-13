@@ -1,5 +1,6 @@
 package com.itcast.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @RequestMapping("/")
 @Controller
+@Slf4j
 public class RiddleJokerController {
+
 
     @GetMapping("/user")
     public String user(){
-
+        log.info("好了喔!!爱花和真白都是我的!!!!");
         return "demo";
 
     }
