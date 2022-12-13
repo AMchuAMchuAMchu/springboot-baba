@@ -3,7 +3,6 @@ package com.itcast.springbootredis;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 
 @SpringBootTest
@@ -24,14 +23,20 @@ class SpringbootRedisApplicationTests {
 //
 //        ops.leftPushAll("l1","l1","l2","l3","l3");
 
+//        ops.ran
+
 
 //        SetOperations<String, String> ops = redisTemplate.opsForSet();
 //
 //        ops.add("s1","s1","s2","s3","s3");
 
-        HashOperations<String, Object, Object> ops = redisTemplate.opsForHash();
+//        ops.
 
-        ops.put("h1","h1","h1");
+//        HashOperations<String, Object, Object> ops = redisTemplate.opsForHash();
+//
+//        ops.put("h1","h1","h1");
+
+//        ops.get
 
 
     }
