@@ -1,6 +1,8 @@
 package com.itcast.controller;
 
+import com.itcast.config.CFServer;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,10 +20,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Slf4j
 public class RiddleJokerController {
 
+    @Autowired
+    private CFServer cfServer;
 
     @GetMapping("/user")
     public String user(){
         log.info("好了喔!!爱花和真白都是我的!!!!");
+        System.out.println(">>"+cfServer);
         return "demo";
     }
 
