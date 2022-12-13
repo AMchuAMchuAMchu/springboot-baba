@@ -4,4 +4,4 @@ logging:
       max-file-size: 500B
       file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
   file:
-    path: d:/demo
+    path: /server-log
