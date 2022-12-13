@@ -29,10 +29,10 @@ import java.time.temporal.ChronoUnit;
 public class CFServerTimeData {
 
     @Max(value = 20,message = "Duration 时间单位异常!!!")
-    @DurationUnit(ChronoUnit.HOURS)
+//    @DurationUnit(ChronoUnit.HOURS)
     private Duration timeout;
 
     @Min(value = 30,message = "内存配置异常!!!!")
-    @DataSizeUnit(DataUnit.MEGABYTES)
+//    @DataSizeUnit(DataUnit.MEGABYTES)
     private DataSize dataSize;
 }
