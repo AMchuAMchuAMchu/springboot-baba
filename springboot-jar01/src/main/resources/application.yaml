@@ -1,5 +1,10 @@
+
 logging:
   logback:
     rollingpolicy:
       max-file-size: 500B
-      file-name-pattern: d:/demo/server.%d{yyyy-MM-dd}.%i.log
+      file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
+spring:
+  devtools:
+    restart:
+      exclude: static/**
