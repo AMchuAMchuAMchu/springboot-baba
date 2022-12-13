@@ -1,7 +1,7 @@
 server:
   ipAddr: 520.02.shiina.shino
-  name01: \u96EA\u4E43
-  name02: \u6A58\u6885
+  name01: "\u96EA\u4E43"
+  name02: "\u6A58\u6885"
 
 logging:
   logback:
