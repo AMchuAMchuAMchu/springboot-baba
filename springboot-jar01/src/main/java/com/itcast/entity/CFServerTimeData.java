@@ -7,7 +7,10 @@ import org.springframework.boot.convert.DurationUnit;
 import org.springframework.stereotype.Component;
 import org.springframework.util.unit.DataSize;
 import org.springframework.util.unit.DataUnit;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
@@ -22,10 +25,14 @@ import java.time.temporal.ChronoUnit;
 @Data
 @Component
 @ConfigurationProperties(prefix = "cfserver")
+@Validated
 public class CFServerTimeData {
+
+    @Max(value = 20,message = "Duration 时间单位异常!!!")
     @DurationUnit(ChronoUnit.HOURS)
     private Duration timeout;
 
+    @Min(value = 30,message = "内存配置异常!!!!")
     @DataSizeUnit(DataUnit.MEGABYTES)
     private DataSize dataSize;
 }

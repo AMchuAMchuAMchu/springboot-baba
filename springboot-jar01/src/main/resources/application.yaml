@@ -4,8 +4,8 @@ server:
   name02: "\u6A58\u6885"
 
 cfserver:
-  timeout: 10
-  dataSize: 20
+  timeout: 30
+  dataSize: 40
 
 
 
