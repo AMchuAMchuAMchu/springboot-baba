@@ -1,7 +1,7 @@
 logging:
   logback:
     rollingpolicy:
-      max-file-size: 3KB
+      max-file-size: 500B
       file-name-pattern: server.%d{yyyy-MM-dd}-%i+1.log
   file:
     path: d:/demo
