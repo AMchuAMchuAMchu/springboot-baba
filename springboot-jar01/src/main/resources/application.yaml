@@ -7,4 +7,4 @@ logging:
 spring:
   devtools:
     restart:
-      exclude: static/**
+      exclude: templates/**
