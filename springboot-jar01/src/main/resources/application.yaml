@@ -6,8 +6,8 @@ server:
 cfserver:
   timeout: 30
   dataSize: 40
-  time01: 10
-  memory01: 20
+#  time01: 10
+#  memory01: 20
 
 
 

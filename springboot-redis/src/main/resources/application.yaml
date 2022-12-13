@@ -1,0 +1,5 @@
+spring:
+  redis:
+    host: 116.205.237.208
+    port: 6379
+    password: rootroot123789
