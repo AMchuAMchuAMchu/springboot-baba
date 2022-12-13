@@ -23,7 +23,6 @@ public class RiddleJokerController {
     public String user(){
         log.info("好了喔!!爱花和真白都是我的!!!!");
         return "demo";
-
     }
 
 
