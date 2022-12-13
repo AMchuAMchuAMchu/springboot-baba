@@ -3,6 +3,12 @@ server:
   name01: "\u96EA\u4E43"
   name02: "\u6A58\u6885"
 
+cfserver:
+  timeout: 10
+  dataSize: 20
+
+
+
 logging:
   logback:
     rollingpolicy:

@@ -1,6 +1,7 @@
 package com.itcast.controller;
 
 import com.itcast.config.CFServer;
+import com.itcast.entity.CFServerTimeData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,10 +24,14 @@ public class RiddleJokerController {
     @Autowired
     private CFServer cfServer;
 
+    @Autowired
+    private CFServerTimeData cfServerTimeData;
+
     @GetMapping("/user")
     public String user(){
         log.info("好了喔!!爱花和真白都是我的!!!!");
-        System.out.println(">>"+cfServer);
+//        System.out.println(">>"+cfServer);
+        System.out.println(">>"+cfServerTimeData);
         return "demo";
     }
 
